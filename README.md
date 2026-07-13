@@ -7,6 +7,7 @@ Your job is to get comfortable driving Claude Code through the core loop and shi
 feature the way you would on a real team.
 
 ## Setup
+The `dotnet` commands are identical on every platform:
 ```bash
 dotnet build
 dotnet test      # everything should be green before you start
@@ -28,4 +29,4 @@ dotnet run --project src/TaskCli -- list
 - Issue #2 (touches several files), or improve `CLAUDE.md` with something you learned.
 
 Stuck at the 30-minute mark? See `hints.md`.
-Wrecked your working copy? `./reset.sh`.
+Wrecked your working copy? Run `.\reset.ps1` (Windows) or `./reset.sh` (macOS/Linux).
