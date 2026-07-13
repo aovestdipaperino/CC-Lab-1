@@ -18,15 +18,22 @@ dotnet run --project src/TaskCli -- list
 ## Your tasks
 1. **Have Claude explain the repo to you.** Ask for the architecture and where things live.
    Verify the explanation against the code — is it right?
-2. **Pick issue #1** from `ISSUES.md`. Drive the core loop deliberately:
-   **explore → plan → review the plan → let it code.** Reject the first plan at least once.
-3. **Run the tests. Commit** with a Claude-generated message.
+2. **Work `ISSUES.md` in order.** It's five steps, gradually harder. Drive the core loop
+   deliberately on the first one: **explore → plan → review the plan → let it code.**
+   Reject the first plan at least once.
+3. **Run the gate to see your progress:** `./check.sh` (macOS/Linux) or `.\check.ps1`
+   (Windows). It builds, then runs step 1 → step 5, stopping at the first that fails.
+4. **Commit** each working step with a Claude-generated message.
+
+Unlike labs 2 and 3, there's no Stop hook here — you drive the loop yourself and run the
+gate when you want to check in.
 
 ## Exit criteria
-- Tests green, one commit, the feature demonstrably works from the CLI.
+- At least step 1 green, one commit, the feature demonstrably works from the CLI.
 
-## Stretch
-- Issue #2 (touches several files), or improve `CLAUDE.md` with something you learned.
+## Going further
+- The steps keep getting harder (a `stats` command, sorting, due dates that touch the model
+  and storage). Nobody's expected to finish all five — get as far as you can, cleanly.
 
 Stuck at the 30-minute mark? See `hints.md`.
 Wrecked your working copy? Run `.\reset.ps1` (Windows) or `./reset.sh` (macOS/Linux).
