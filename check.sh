@@ -3,7 +3,7 @@
 # "step" trait), stopping at the first step that fails. The baseline suite must
 # already be green (`dotnet test`); the steps are the features you add.
 #
-# Unlike labs 2 and 3, this lab has no Stop hook — you drive the loop yourself.
+# Unlike labs 2 and 3, this lab has no /goal gate — you drive the loop yourself.
 # Run this whenever you want to see how far you've gotten.
 set -uo pipefail
 cd "$(dirname "$0")"

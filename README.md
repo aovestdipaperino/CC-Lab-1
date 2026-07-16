@@ -25,7 +25,7 @@ dotnet run --project src/TaskCli -- list
    (Windows). It builds, then runs step 1 → step 5, stopping at the first that fails.
 4. **Commit** each working step with a Claude-generated message.
 
-Unlike labs 2 and 3, there's no Stop hook here — you drive the loop yourself and run the
+Unlike labs 2 and 3, there is no /goal gate here — you drive the loop yourself and run the
 gate when you want to check in.
 
 ## Exit criteria
