@@ -1,5 +1,7 @@
 # Lab 1 — Onboard & ship a feature
 
+[![GitHub stars](https://img.shields.io/github/stars/aovestdipaperino/CC-Lab-1?logo=github&color=brightgreen)](https://github.com/aovestdipaperino/CC-Lab-1/stargazers)
+
 **Time:** 45 minutes · **Language:** C# (.NET 8)
 
 You've just joined a project you've never seen: `TaskCli`, a command-line task tracker.
